@@ -1,0 +1,101 @@
+body {
+    margin: 0;
+    padding: 0;
+  }
+
+#barraSuperior {
+    background-color:#B53B30;
+
+}
+
+.icono {
+    margin: 10px;
+}
+
+.nav-item {
+    margin-right: 60px; /* Ajusta el espacio según tus necesidades */
+    margin-top: 10px;
+    margin-bottom: 25px; 
+    font-size: 20px;
+    color: #A4534F; 
+    font-family: 'Lora', serif;
+    font-weight: 500;
+  }
+
+#navbarNav {
+    margin-right: 50px; 
+    margin-left: 30px;
+  }
+
+  .img-fluid {
+    position: relative;
+    height: 100vh; /* 100% del viewport height (altura de la ventana del navegador) */
+    overflow: hidden; /* Para asegurar que la imagen no se desborde del contenedor */
+  }
+
+  .img-fluid {
+    width: 100%;
+    object-fit: cover; /* Para asegurar que la imagen cubra todo el contenedor */
+  }
+
+  /*HOME*/
+  
+  /* Estilos personalizados para el texto */
+  .hero-text {
+    position: absolute;
+    bottom: 30px;
+    left: 100px;
+    color: #B53B30;
+    font-family: 'Fraunces', serif;
+  }
+
+  .merendamos {
+    font-family: 'Fraunces','serif';
+    font-size: 40px;
+    font-weight: 600;
+    margin: 50px;
+    color: #B53B30;
+  }
+
+
+ .texto-2 {
+    font-family: 'Lora', 'serif';
+    color: #B53B30;
+    font-size: 30px;
+    font-weight: 500;
+    padding-left: 60px;
+ }
+
+ .div-merienda {
+   padding-left: 60px;
+ }
+
+ .fotos-merendamos {
+    margin-bottom: 40px;
+ }
+
+.footer-bg {
+    background-color: #B53B30;
+}
+
+
+.card-title {
+    font-family: 'Fraunces', 'serif';
+    font-weight: 700;
+}
+
+.card-text {
+    font-family: 'Lora', 'serif';
+}
+
+/*FOOTER*/
+
+.texto-footer {
+    font-family: 'Lora', 'serif';
+}
+
+@media (max-width: 767px) {
+    .texto-footer {
+        font-size: 12px;
+    }
+}
