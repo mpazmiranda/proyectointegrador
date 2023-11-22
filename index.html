@@ -11,85 +11,172 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid" id="barraSuperior">
-          <div class="navbar-nav ms-auto">
-            <img src="./images/facebook blanco.png" alt="Imagen 1" width="20" height="20" class="icono">
-            <img src="./images/whatsapp blanco.png" alt="Imagen 2" width="20" height="20" class="icono">
-          </div>
-        </div>
-    </nav>
-    <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid">
-           <!-- Logo -->
-           <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-              <img src="./images/logo.png" alt="Juan Jos" width="230" height="120">
-            </a>
-         <!-- Boton menu -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
-            data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-          </div>
-          <!-- Secciones -->
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto" > 
-              <li class="nav-item">
-                <a class="nav-link" href="./productos.html">Productos</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./bruncheria.html">Brunchería</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Historia</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./">Contacto</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
 
-      <!--Hero image-->
-      <img src="./images/hero image.jpg" class="img-fluid" alt="">
-        <div class="hero-text">
-          <h1><span>Panificación<br>artesanal desde<br>1988</h1>
-            <button type="button" class="btn btn-outline-dark" style="padding-left: 20px; padding-right: 20px; padding-top: 10px; padding-bottom: 10px;"><a href="./productos.html" style="text-decoration:none; color: black;">Ver más </a><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
-                <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
-              </svg></button>
+  
+<!--Comienzo barra superior-->
+<ul class="nav justify-content-end" style="background-color: #B53B30;">
+   <li class="nav-item mx-2 my-2">
+       <a href="#"><img class="mb-1" src="./images/facebook blanco.png" alt="" width="20" height="20"></a>
+   </li>
+   <li class="nav-item mx-2 my-2">
+       <a href="#"><img class="mb-1" src="./images/logo insta blanco.png" alt="" width="20" height="20"></a>
+   </li>
+   <li class="nav-item my-2 mx-2 me-4">
+       <a href="#"><img class="mb-1" src="./images/whatsapp blanco.png" alt="" width="20" height="20"></a>
+   </li>
+</ul>
+<!--Fin barra superior-->
+
+
+<!--Comienzo Nav Bar-->
+  <div class="container">
+    <nav class="navbar navbar-expand-md navbar-light">
+      <div 
+      class="container-fluid">
+         <a 
+         class="navbar-brand" href="">
+         <img class="zoom" src="./images/logo.png" alt="" width="200" height="99">
+         </a>
+        <button 
+          class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span 
+          class="navbar-toggler-icon"></span>
+        </button>
+          <!--Secciones-->
+          <div  
+             class="collapse navbar-collapse" id="navbar">
+             <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
+               <li class="nav-item mx-3 text-nav zoom">
+               <a class="nav-link" href="./productos.html">Productos</a>
+               </li>
+               <li class="nav-item mx-3 text-nav zoom">
+               <a class="nav-link" href="./bruncheria.html">Bruncheria</a>
+               </li>
+               <li class="nav-item mx-3 text-nav zoom">
+               <a class="nav-link" href="./historia.html">Historia</a>
+               </li>
+               <li class="nav-item mx-3 text-nav zoom">
+               <a class="nav-link" href="./contacto.html">Contacto</a>
+              </li>
+             </ul>
+          </div>
+          <!--Fin secciones-->
+      </div>
+    </nav>
+  </div>
+<!--Fin Nav Bar-->
+
+<!--Comienzo hero image-->
+<div class="bg-image d-flex flex-row justify-content-start align-items-end">
+     <div class="container my-5 animate__animated animate__slideInLeft">
+         <h1 class="text-banner" >
+         Panificación <br>artesanal desde <br>1988.
+         </h1>
+         <button type="button" class="btn btn-outline-dark button_slide slide_right"> <a href="./productos.html" style="font-family: 'Lora','serif';">Ver más</a>
+         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16" style="margin-left: 5px;">
+         <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/></svg>
+         </button>
+     </div> 
+</div>
+<!--Fin hero image-->
+
+<!--Titulo-->
+<div class="container d-flex align-items-center justify-content-center mt-5">
+    <p class="text-container-home">¿Merendamos?</p>
+</div>
+
+<div class="container d-flex">
+  <div class="row mt-5 mb-5"> 
+     <div class="col-md-4 col-sm-12 contenedor">
+         <img id="imagen1" class="izquierda" src="./images/alfajores.jpg" alt="">
+     </div>
+     <div class="col-md-4 col-sm-12 contenedor">
+         <img id="imagen2" class="derecha" src="./images/rogel.jpg" alt="">
+     </div>
+     <div class="col-md-4 col-sm-12 contenedor d-flex justify-content-start align-items-center">
+         <div>
+             <p class="">Descubrí todo lo <br>que tenemos para <br>ofrecerte. </p> 
+             <button type="button" class="btn btn-outline-dark button_slide slide_right " style="margin-left: 60px;"><a href="./productos.html" style="font-family: 'Lora','serif';">Ver opciones</a>
+             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16" style="margin-left: 5px;">
+             <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+             </svg>
+             </button>
          </div>
-        </div>
+     </div>
+  </div>
+</div>
+
+
+<div class="slider mt-2 mb-5">
+  <div class="slide-track">
+      <div class="slide">
+          <img src="./images/opinion1.png" alt="">
+      </div>
+      <div class="slide">
+          <img src="./images/Frame 2 (2).png" alt="">
+      </div>
+      <div class="slide">
+          <img src="./images/Frame 3 (2).png" alt="">
+      </div>
+      <div class="slide">
+          <img src="./images/Frame 4 (3).png" alt="">
+      </div>
+      <div class="slide">
+          <img src="./images/Frame 5 (3).png" alt="">
+      </div>
+      <div class="slide">
+          <img src="./images/Frame 6 (4).png" alt="">
+      </div>
+      <div class="slide">
+          <img src="./images/Frame 7.png" alt="">
+      </div>
+
+      <div class="slide">
+        <img src="./images/opinion1.png" alt="">
+      </div>
+      <div class="slide">
+        <img src="./images/Frame 2 (2).png" alt="">
     </div>
-    <!--Fin hero-->
-        
-     <div class="container">
-            <!-- Título -->
-            <h2 class="text-center merendamos">¿Merendamos?</h2>
-        
-            <div class="row">
-                <!-- Imagen 1 -->
-                <div class="col-md-4">
-                    <img src="./images/alfajores.jpg" alt="Imagen 1" class="img-fluid fotos-merendamos">
-                </div>
-                <!-- Imagen 2 -->
-                <div class="col-md-4">
-                    <img src="./images/rogel.jpg" alt="Imagen 2" class="img-fluid fotos-merendamos">
-                </div>
-                <!-- Columna para el texto -->
-                <div class="col-md-4 align-self-center">
-                    <p class="ms-md-4 texto-2">Descubrí todo lo que <br> tenemos para ofrecerte.</p>
-                    <button type="button" class="btn btn-outline-dark" style="padding-left: 20px; padding-right: 20px; padding-top: 10px; padding-bottom: 10px; margin-left: 87px;"><a href="./productos.html" style="text-decoration:none; color: black;">Ver opciones </a>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
-                            <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
-                          </svg></button>
-                </div>
-            </div>
-        </div>
+    <div class="slide">
+        <img src="./images/Frame 3 (2).png" alt="">
+    </div>
+    <div class="slide">
+        <img src="./images/Frame 4 (3).png" alt="">
+    </div>
+    <div class="slide">
+        <img src="/images/Frame 5 (3).png" alt="">
+    </div>
+    <div class="slide">
+        <img src="./images/Frame 6 (4).png" alt="">
+    </div>
+    <div class="slide">
+        <img src="./images/Frame 7.png" alt="">
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <!--footer-->
     <footer 
          class="text-center text-white" 
@@ -124,5 +211,7 @@
  <!-- Fin footer -->
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.js'></script>
+    <script  src="./js.js"></script>
 </body>
 </html>

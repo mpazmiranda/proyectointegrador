@@ -1,101 +1,177 @@
 body {
     margin: 0;
-    padding: 0;
-  }
-
-#barraSuperior {
-    background-color:#B53B30;
-
+    box-sizing: border-box;
 }
 
-.icono {
-    margin: 10px;
-}
 
-.nav-item {
-    margin-right: 60px; /* Ajusta el espacio según tus necesidades */
-    margin-top: 10px;
-    margin-bottom: 25px; 
-    font-size: 20px;
-    color: #A4534F; 
-    font-family: 'Lora', serif;
-    font-weight: 500;
-  }
+/*NAVBAR*/
 
-#navbarNav {
-    margin-right: 50px; 
-    margin-left: 30px;
-  }
-
-  .img-fluid {
-    position: relative;
-    height: 100vh; /* 100% del viewport height (altura de la ventana del navegador) */
-    overflow: hidden; /* Para asegurar que la imagen no se desborde del contenedor */
-  }
-
-  .img-fluid {
-    width: 100%;
-    object-fit: cover; /* Para asegurar que la imagen cubra todo el contenedor */
-  }
-
-  /*HOME*/
-  
-  /* Estilos personalizados para el texto */
-  .hero-text {
-    position: absolute;
-    bottom: 30px;
-    left: 100px;
-    color: #B53B30;
-    font-family: 'Fraunces', serif;
-  }
-
-  .merendamos {
-    font-family: 'Fraunces','serif';
-    font-size: 40px;
-    font-weight: 600;
-    margin: 50px;
-    color: #B53B30;
-  }
-
-
- .texto-2 {
+.text-nav {
     font-family: 'Lora', 'serif';
+    color: #B53B30 ;  /*VER ACA POR QUE NO CAMBIA DE COLOR*/
+}
+
+.zoom {
+transition: transform .2s; 
+}
+
+.zoom:hover {
+  transform: scale(1.1);
+}
+
+
+
+
+/*HOME*/
+
+.bg-image { 
+    background-image: url(./images/medialunas.jpg);
+    height: 75vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    opacity: 01;
+}
+
+.text-banner { 
+   font-family: 'Fraunces', 'serif';
+   color: #B53B30;
+   opacity: 1;
+}
+
+.button_slide {
+    color: #FFF; 
+    border: 2px solid rgb(0, 0, 0);
+    display: inline-block;
+    cursor: pointer;
+    
+}
+
+.button_slide a {
+    text-decoration: none; 
+    color: inherit; 
+}
+
+  .slide_right:hover {
+    box-shadow: inset 400px 0 0 0 #000000;
+    transition: ease-out 1.5s;
+  
+
+}
+
+.text-container-home {
+    font-family: 'Fraunces', 'serif';
     color: #B53B30;
     font-size: 30px;
-    font-weight: 500;
-    padding-left: 60px;
- }
-
- .div-merienda {
-   padding-left: 60px;
- }
-
- .fotos-merendamos {
-    margin-bottom: 40px;
- }
-
-.footer-bg {
-    background-color: #B53B30;
+    font-weight: 600;
+}
+  
+  
+.scroll {
+	width: 100%;
+    box-sizing: border-box;
 }
 
 
-.card-title {
-    font-family: 'Fraunces', 'serif';
-    font-weight: 700;
+.contenedor img {
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+	border-radius: 5px;
+	
+
+	opacity: 0;
+	transform: scale(0.9);
+	transition: .8s ease-in-out all;
 }
 
-.card-text {
-    font-family: 'Lora', 'serif';
+.contenedor img.izquierda {
+	transform: translateX(-100px);
 }
 
-/*FOOTER*/
-
-.texto-footer {
-    font-family: 'Lora', 'serif';
+.contenedor img.derecha {
+	transform: translateY(100px);
 }
+
+.contenedor img.visible {
+	opacity: 1;
+	transform: scale(1) translateX(0);
+}
+
+.contenedor p {
+  font-family: 'Lora', 'serif';
+  font-size: 1.7em;
+  color: #B53B30;
+  margin-left: 60px;
+}
+
+
+
 
 @media (max-width: 767px) {
-    .texto-footer {
-        font-size: 12px;
+    .contenedor {
+
+    margin-bottom: 20px; 
+    
+    }
+
+    .contenedor p {
+
+        margin-top: 50px; 
+        
+        }
+  
+    .contenedor img .izquierda,
+    .contenedor img .derecha {
+      transform: none; /* Elimina las transformaciones en dispositivos móviles */
     }
 }
+
+
+.slider {
+    width: 100vw;
+    height: auto;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slider .slide-track {
+    display: flex;
+    animation: scroll 30s linear infinite;
+    -webkit-animation: scroll 30s linear infinite;
+    width: calc(250px * 14);
+}
+ 
+.slider .slide {
+    width: 250px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.slider .slide img {
+    width: 100%;
+}
+
+@keyframes scroll {
+    0% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+    100% {
+        -webkit-transform: translateX(calc(-250px * 7));
+        transform: translateX(calc(-250px * 7));
+    }
+}
+
+
+
+/*FOOTER*/
+.texto-footer {
+    font-family: 'Lora', 'serif';
+    font-weight: 100;
+}
+
+
+
+
