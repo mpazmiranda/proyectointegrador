@@ -13,99 +13,145 @@
 
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid" id="barraSuperior">
-          <!-- Contenido a la derecha -->
-          <div class="navbar-nav ms-auto">
-            <img src="./images/facebook blanco.png" alt="Imagen 1" width="20" height="20" class="icono">
-            <img src="./images/whatsapp blanco.png" alt="Imagen 2" width="20" height="20" class="icono">
+
+
+
+<!--Comienzo barra superior-->
+<ul class="nav justify-content-end" style="background-color: #B53B30;">
+  <li class="nav-item mx-2 my-2">
+      <a href="http://www.facebook.com" target="_blank"><img class="mb-1" src="./images/facebook blanco.png" alt="" width="20" height="20"></a>
+  </li>
+  <li class="nav-item mx-2 my-2">
+      <a href="http://www.instagram.com" target="_blank"><img class="mb-1" src="./images/logo insta blanco.png" alt="" width="20" height="20"></a>
+  </li>
+  <li class="nav-item my-2 mx-2 me-4">
+      <a href="http://www.whatsapp.com" target="_blank"><img class="mb-1" src="./images/whatsapp blanco.png" alt="" width="20" height="20"></a>
+  </li>
+</ul>
+<!--Fin barra superior-->
+
+<!--Comienzo Nav Bar-->
+<div class="container">
+    <nav class="navbar navbar-expand-md navbar-light">
+      <div 
+      class="container-fluid">
+         <a 
+         class="navbar-brand" href="./index.html">
+         <img class="zoom" src="./images/logo.png" alt="" width="200" height="99">
+         </a>
+        <button 
+          class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span 
+          class="navbar-toggler-icon"></span>
+        </button>
+          <!--Secciones-->
+          <div  
+             class="collapse navbar-collapse" id="navbar">
+             <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
+               <li class="nav-item mx-3 text-nav zoom">
+               <a class="nav-link" href="./productos.html">Productos</a>
+               </li>
+               <li class="nav-item mx-3 text-nav zoom">
+               <a class="nav-link" href="./quienessomos.html">Quiénes somos</a>
+               </li>
+               <li class="nav-item mx-3 text-nav zoom">
+               <a class="nav-link" href="./locales.html">Locales</a>
+               </li>
+               <li class="nav-item mx-3 text-nav zoom">
+               <a class="nav-link" href="./contacto.html">Contacto</a>
+              </li>
+             </ul>
           </div>
-        </div>
+          <!--Fin secciones-->
+      </div>
     </nav>
-    <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid">
-           <!-- Logo -->
-           <div class="container-fluid">
-            <a class="navbar-brand" href="./index.html">
-              <img src="./images/logo.png" alt="Juan Jos" width="230" height="120">
-            </a>
-         <!-- Boton menu -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
-            data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-          </div>
-          <!-- Secciones -->
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto" > 
-              <li class="nav-item">
-                <a class="nav-link" href="./productos.html">Productos</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./bruncheria.html">Brunchería</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Historia</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Contacto</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-      <!--Formulario-->
-      <div class="mb-3 mx-5">
-        <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Tu nombre" rows="1"></textarea>
+  </div>
+<!--Fin Nav Bar-->
+
+
+<!--Comienzo hero image-->
+<div class="contact bg-image">
+</div>
+<!--Fin hero image-->
+
+<!--Titulo-->
+<div class="container-fluid text-center mt-5">
+  <h1 style="font-family: 'Fraunces', 'serif'; font-size: 40px; color: #B53B30;">
+  Una página de contacto que te lee y te responde :)</h1>
+</div>
+
+<!-- contacto formulario -->
+<div class="container mt-5 mb-5">
+  <div class="row">
+    <div class="col-lg-6 col-md-12">
+      <img src="./images/chica-sosteniendo1.jpeg" alt="" width="100%">
+    </div>
+    <div class="col-lg-6 col-md-12 pb-3" style="background-color: #B53B30;">
+    <p class="pt-4" style="font-family: 'Fraunces', 'serif'; font-size: 30px; color: white; margin-top: 20px; margin-left: 20px;">Contactanos!</p>
+    <form style="margin-top: 30px; margin-left: 20px; margin-right: 20px;">
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Tu nombre</label>
+        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
       </div>
-      <div class="mb-3 mx-5">
-        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Tu correo electrónico">
+      <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Tu correo electrónico</label>
+        <input type="email" class="form-control" id="exampleInputPassword1">
       </div>
-      <div class="mb-3 mx-5">
-        <input class="form-control" type="text" placeholder="Celular" aria-label="default input example">
+      <div class="mb-3">
+        <label for="exampleInputCelular" class="form-label">Tu celular</label>
+        <input type="text" class="form-control" id="exampleInputCelular" aria-describedby="emailHelp">
       </div>
-      <div class="mb-3 mx-5">
-        <input class="form-control" type="text" placeholder="Motivo" aria-label="default input example">
+      <div class="mb-3">
+        <label for="exampleFormControlTextarea1">Tu mensaje</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
       </div>
-      <div class="mb-3 mx-5">
-        <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Tu mensaje" rows="3"></textarea>
-      </div>
-      <!--Fin formulario-->
+      
+      <button type="submit" class="btn btn-primary my-3 btn-dark" style="border-radius: 20px; padding-left: 20px; padding-right: 20px;">Enviar</button>
+    </form>
+  </div>
+</div>
+</div>
+<!-- Fin formulario -->
+
+
 
 <!--footer-->
-    <footer 
-         class="text-center text-white" 
-         style="background-color: #B53B30; height: 150px;">
-             <div class="container pt-4">
-        <!-- Comienzo RRSS -->
-             <section class="mx-4-4">
-        <!-- Facebook -->
-                 <a
-                 class="btn btn-link btn-lg"
-                 href="https://www.facebook.com/"> 
-                 <img src="./images/facebook blanco.png" alt="" width="20" height="20">
-                 </a>
-        <!-- Instagram -->
-                 <a class="btn btn-link btn-lg"
-                 href="https://www.instagram.com/">
-                 <img src="./images/logo insta blanco.png" alt="" width="20" height="20">
-                 </a>
-        <!-- WhatsApp -->
-                 <a
-                 class="btn btn-link btn-lg"
-                 href="https://web.whatsapp.com/">
-                 <img src="./images/whatsapp blanco.png" alt="" width="20" height="20">
-                 </a>
-        <!-- Fin: RRSS -->
-             </div>
-             <div class="text-center text-white p-3 texto-footer" 
-                  style="background-color: #B53B30">
-                  Leopoldo Herrera y Colón, Villaguay, Entre Ríos
-             </div>
-    </footer>
- <!-- Fin footer -->
-     
-         
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<footer 
+class="text-center text-white" 
+style="background-color: #B53B30; height: 150px;">
+    <div class="container pt-4">
+<!-- Comienzo RRSS -->
+    <section class="mx-4-4">
+<!-- Facebook -->
+        <a
+        class="btn btn-link btn-lg"
+        href="https://www.facebook.com/"> 
+        <img src="./images/facebook blanco.png" alt="" width="20" height="20">
+        </a>
+<!-- Instagram -->
+        <a class="btn btn-link btn-lg"
+        href="https://www.instagram.com/">
+        <img src="./images/logo insta blanco.png" alt="" width="20" height="20">
+        </a>
+<!-- WhatsApp -->
+        <a
+        class="btn btn-link btn-lg"
+        href="https://web.whatsapp.com/">
+        <img src="./images/whatsapp blanco.png" alt="" width="20" height="20">
+        </a>
+<!-- Fin: RRSS -->
+    </div>
+    <div class="text-center text-white p-3 texto-footer" 
+         style="background-color: #B53B30">
+         Villaguay, Entre Ríos, Argentina
+    </div>
+</footer>
+<!-- Fin footer -->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.js'></script>
+<script  src="./js.js"></script>
+
+   
 </body>
 </html>

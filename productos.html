@@ -13,107 +13,160 @@
 
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid" id="barraSuperior">
-          <!-- Contenido a la derecha -->
-          <div class="navbar-nav ms-auto">
-            <img src="./images/facebook blanco.png" alt="Imagen 1" width="20" height="20" class="icono">
-            <img src="./images/whatsapp blanco.png" alt="Imagen 2" width="20" height="20" class="icono">
-          </div>
-        </div>
-    </nav>
-    <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid">
-           <!-- Logo -->
-           <div class="container-fluid">
-            <a class="navbar-brand" href="./index.html">
-              <img src="./images/logo.png" alt="Juan Jos" width="230" height="120">
-            </a>
-         <!-- Boton menu -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
-            data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-          </div>
-          <!-- Secciones -->
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto" > 
-              <li class="nav-item">
-                <a class="nav-link" href="./productos.html">Productos</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./bruncheria.html">Brunchería</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./historia.html">Historia</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./contacto.html">Contacto</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
 
-      <p class="text-center fs-1" style="font-family: 'Fraunces', 'serif'; font-weight: 600; color: #B53B30;">Productos</p> </p>
 
-      <!--galeria-->
-      <div class="row row-cols-1 row-cols-md-3 g-4 my-4 mx-5">
-        <div class="col">
-          <div class="card border-0">
-            <img src="./images/brownies.jpg" class="card-img-top img-"  style="width: 100%; height: 520px;" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">BROWNIES</h5>
-              <p class="card-text">Con nueces y cubiertos con chocolate.</p>
-            </div>
+<!--Comienzo barra superior-->
+<ul class="nav justify-content-end" style="background-color: #B53B30;">
+  <li class="nav-item mx-2 my-2">
+      <a href="http://www.facebook.com" target="_blank"><img class="mb-1" src="./images/facebook blanco.png" alt="" width="20" height="20"></a>
+  </li>
+  <li class="nav-item mx-2 my-2">
+      <a href="http://www.instagram.com" target="_blank"><img class="mb-1" src="./images/logo insta blanco.png" alt="" width="20" height="20"></a>
+  </li>
+  <li class="nav-item my-2 mx-2 me-4">
+      <a href="http://www.whatsapp.com" target="_blank"><img class="mb-1" src="./images/whatsapp blanco.png" alt="" width="20" height="20"></a>
+  </li>
+</ul>
+<!--Fin barra superior-->
+
+<!--Comienzo Nav Bar-->
+<div class="container">
+    <nav class="navbar navbar-expand-md navbar-light">
+      <div 
+      class="container-fluid">
+         <a 
+         class="navbar-brand" href="./index.html">
+         <img class="zoom" src="./images/logo.png" alt="" width="200" height="99">
+         </a>
+        <button 
+          class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span 
+          class="navbar-toggler-icon"></span>
+        </button>
+          <!--Secciones-->
+          <div  
+             class="collapse navbar-collapse" id="navbar">
+             <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
+               <li class="nav-item mx-3 text-nav zoom">
+               <a class="nav-link" href="./productos.html">Productos</a>
+               </li>
+               <li class="nav-item mx-3 text-nav zoom">
+               <a class="nav-link" href="./quienessomos.html">Quiénes somos</a>
+               </li>
+               <li class="nav-item mx-3 text-nav zoom">
+               <a class="nav-link" href="./locales.html">Locales</a>
+               </li>
+               <li class="nav-item mx-3 text-nav zoom">
+               <a class="nav-link" href="./contacto.html">Contacto</a>
+              </li>
+             </ul>
           </div>
-        </div>
-        <div class="col">
-          <div class="card border-0">
-            <img src="./images/lemon pie.jpg" class="card-img-top" style="width: 100%; height: 520px;" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">LEMON PIE</h5>
-              <p class="card-text">El mejor equilibrio entre lo dulce y lo cítrico.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card border-0">
-            <img src="./images/alfajores.jpg" class="card-img-top" style="width: 100%; height: 520px;" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">ALFAJORES DE CHOCOLATE</h5>
-              <p class="card-text">Con el dulce de leche más rico.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card border-0">
-            <img src="./images/cookies.jpg" class="card-img-top" style="width: 100%; height: 520px;"  alt="...">
-            <div class="card-body">
-              <h5 class="card-title">COOKIES</h5>
-              <p class="card-text">De vainilla con chips de chocolate.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-            <div class="card border-0">
-              <img src="./images/cheesecake.jpg" class="card-img-top" style="width: 100%; height: 520px;" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">CHEESECAKE</h5>
-                <p class="card-text">Con frutos rojos.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card border-0">
-              <img src="./images/tortas negras.jpg" class="card-img-top"  style="width: 100%; height: 520px;" alt="..." > 
-              <div class="card-body">
-                <h5 class="card-title">TORTAS NEGRAS</h5>
-                <p class="card-text">Uno de nuestros clásicos</p>
-              </div>
-            </div>
-          </div>
+          <!--Fin secciones-->
       </div>
+    </nav>
+  </div>
+<!--Fin Nav Bar-->
+
+<!--Comienzo hero image-->
+<div class="productos bg-image">
+</div>
+<!--Fin hero image-->
+
+<div class="container my-5 pt-2">
+<p class="text-container-home">Desayunos y meriendas</p>
+</div>
+
+<!-- Desayunos y meriendas -->
+<div class="row row-cols-1 row-cols-md-4 g-4 mx-lg-5 px-lg-5 ">
+  <div class="col ">
+    <div class="card card-producto">
+      <img src="./images/Productos/chipa 1.png" class="card-img-top" alt="chipa">
+      <div class="card-body">
+        <h5 class="card-title">Chipa</h5>
+        <p class="card-text">Ideales para una tarde de lluvia.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card card-producto rounded-0">
+      <img src="./images/Productos/croissants.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Croissants</h5>
+        <p class="card-text">Con una masa súper hojaldrada.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card card-producto">
+      <img src="./images/Productos/tortas negras.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Tortas negras</h5>
+        <p class="card-text">Nuestro clásico de siempre.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card card-producto">
+      <img src="./images/Productos/cookies.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Cookies</h5>
+        <p class="card-text">Con muchísimos chips de chocolate.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Fin desayunos y meriendas -->
+
+<!-- Titulo Bebidas -->
+<div class="container my-5 pt-2">
+  <p class="text-container-home">Bebidas</p>
+</div>
+<!-- Fin Titulo bebidas -->
+
+<!-- Bebidas -->
+<div class="row row-cols-1 row-cols-md-4 g-4 mx-lg-5 px-lg-5 pb-3">
+  <div class="col ">
+    <div class="card card-producto">
+      <img src="./images/Productos/cafe.png" class="card-img-top" alt="chipa">
+      <div class="card-body">
+        <h5 class="card-title">Café</h5>
+        <p class="card-text">Acompañalo con nuestras facturitas.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card card-producto rounded-0">
+      <img src="./images/Productos/cafe helado.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Café helado</h5>
+        <p class="card-text">Nuestra nueva opción para los días de calor.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col ">
+    <div class="card card-producto">
+      <img src="./images/Productos/licuado.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Licuados</h5>
+        <p class="card-text">Ideal para el verano pero disfrutalo todo el año.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card card-producto">
+      <img src="./images/Productos/limonada.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Limonada</h5>
+        <p class="card-text">La mejor opción para refrescarte.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Fin bebidas -->
+
+
+
+
 
 <!--footer-->
 <footer 
@@ -143,11 +196,15 @@ style="background-color: #B53B30; height: 150px;">
     </div>
     <div class="text-center text-white p-3 texto-footer" 
          style="background-color: #B53B30">
-         Leopoldo Herrera y Colón, Villaguay, Entre Ríos
+         Villaguay, Entre Ríos, Argentina
     </div>
 </footer>
 <!-- Fin footer -->
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.js'></script>
+<script  src="./js.js"></script>
+
+   
 </body>
 </html>

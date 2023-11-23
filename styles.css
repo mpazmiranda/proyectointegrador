@@ -1,6 +1,7 @@
 body {
     margin: 0;
     box-sizing: border-box;
+
 }
 
 
@@ -107,8 +108,6 @@ transition: transform .2s;
 }
 
 
-
-
 @media (max-width: 767px) {
     .contenedor {
 
@@ -165,13 +164,105 @@ transition: transform .2s;
 }
 
 
+/*QUIENES SOMOS*/
+
+.productos {
+    background-image: url(./images/croissants-gris.jpg);
+    background-size: cover;
+    height: 70vh;
+
+}
+
+
+/*PRODUCTOS*/
+
+.quienessomos {
+    background-image: url(./images/amasado.jpg);
+    background-size: cover;
+    height: 70vh;
+
+}
+
+.col .card-producto  {
+    border: none;
+    border-radius: 0;
+}
+
+.col .card-producto img {
+    border-radius: 0;
+    transition: transform .2s; 
+}
+
+
+.col .card-producto .card-title {
+  font-family: 'Fraunces', 'serif';
+}
+
+.col .card-producto .card-text {
+    font-family: 'Lora', 'serif';
+}
+
+.card-img-top {
+    transition: transform .2s;
+}
+
+.card-img-top:hover {
+    transform: scale(1.05);
+}
+
+
+/*CONTACTO*/
+
+.color-fondo {
+    background-color: #FFFCF5;
+}
+form {
+    font-family: 'Lora', 'serif';
+    color: white;
+}
+
+.contact {
+    background-image: url(./images/atendiendo.jpeg);
+    background-size: cover;
+    height: 70vh;
+
+}
+
+
+/*LOCALES*/
+.locales {
+    background-image: url(./images/locales.jpeg);
+    background-size: cover;
+    height: 70vh;
+
+}
+
+.direcciones {
+   box-shadow: 6px 7px 10px -5px rgba(0,0,0,0.58);
+}
+
+.titulo-direcciones {
+    font-family: 'Fraunces','serif';
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: #B53B30;
+}
+
+.texto-direcciones {
+    font-family: 'Lora','serif';
+    margin-bottom: 5px;
+}
+
+.google-map {
+    width: 100%;
+}
+
+
 
 /*FOOTER*/
 .texto-footer {
     font-family: 'Lora', 'serif';
     font-weight: 100;
 }
-
-
 
 
