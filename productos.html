@@ -9,7 +9,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&display=swap" rel="stylesheet">
 
 </head>
 <body>
@@ -68,13 +70,24 @@
 <!--Fin Nav Bar-->
 
 <!--Comienzo hero image-->
-<div class="productos bg-image">
+<div class="productos bg-image  d-flex align-items-center justify-content-center">
+  <h1 class="text-banner estilo-x " style="color: white;  font-family: 'Bebas Neue', sans-serif; text-shadow: 1px 1px black;;">
+    PRODUCTOS
+    </h1>
 </div>
 <!--Fin hero image-->
 
-<div class="container my-5 pt-2">
+<div class="text-center d-flex flex-column flex-sm-row mt-5 mx-lg-5 px-lg-5">
+  <button type="button" class="btn btn-primary btn-dark mx-2" style="border-radius: 20px; padding-left: 20px; padding-right: 20px; font-family: 'serif', 'Lora' ; "><a href="#desayuno" style="text-decoration: none; color: white;">Desayunos y meriendas</a></button>
+  <button type="button" class="btn btn-primary btn-dark mx-2" style="border-radius: 20px; padding-left: 20px; padding-right: 20px; font-family: 'serif', 'Lora' ;"><a href="#tortas" style="text-decoration: none; color: white;"> Tortas </a></button>
+  <button type="button" class="btn btn-primary btn-dark mx-2" style="border-radius: 20px; padding-left: 20px; padding-right: 20px; font-family: 'serif', 'Lora' ; "><a href="#bebidas"  style="text-decoration: none; color: white;">Bebidas</a></button>
+</div>
+
+<!-- Titulo Desayunos y meriendas -->
+<div id=desayuno class="container my-5 pt-2">
 <p class="text-container-home">Desayunos y meriendas</p>
 </div>
+<!-- Fin Titulo desayunos y meriendas -->
 
 <!-- Desayunos y meriendas -->
 <div class="row row-cols-1 row-cols-md-4 g-4 mx-lg-5 px-lg-5 ">
@@ -117,8 +130,58 @@
 </div>
 <!-- Fin desayunos y meriendas -->
 
+<!-- Titulo Tortas -->
+<div id= tortas class="container my-5 pt-2">
+  <p class="text-container-home">Tortas</p>
+  </div>
+<!-- Fin Titulo Tortas -->
+  
+  <!-- Tortas-->
+  <div class="row row-cols-1 row-cols-md-4 g-4 mx-lg-5 px-lg-5 ">
+    <div class="col ">
+      <div class="card card-producto">
+        <img src="./images/Productos/lemonpie.jpg" class="card-img-top" alt="lemonpie">
+        <div class="card-body">
+          <h5 class="card-title">Lemon pie</h5>
+          <p class="card-text">Explosión de sabor cítrico.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card card-producto rounded-0">
+        <img src="./images/Productos/rogel 2.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Rogel</h5>
+          <p class="card-text">Con muchas capas del mejor dulce de leche.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card card-producto">
+        <img src="./images/Productos/cheesecake.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Cheesecake de frutos rojos</h5>
+          <p class="card-text">Nuestro clásico de siempre.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card card-producto">
+        <img src="./images/Productos/mousse.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Brownie y mousse de chocolate</h5>
+          <p class="card-text">Con muchísimos chips de chocolate.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Fin tortas -->
+  
+
+
+
 <!-- Titulo Bebidas -->
-<div class="container my-5 pt-2">
+<div id= bebidas class="container my-5 pt-2">
   <p class="text-container-home">Bebidas</p>
 </div>
 <!-- Fin Titulo bebidas -->
@@ -163,9 +226,6 @@
   </div>
 </div>
 <!-- Fin bebidas -->
-
-
-
 
 
 <!--footer-->

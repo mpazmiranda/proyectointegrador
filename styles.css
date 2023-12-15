@@ -1,5 +1,6 @@
-body {
+ * {
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
 
 }
@@ -125,6 +126,8 @@ transition: transform .2s;
     .contenedor img .derecha {
       transform: none; /* Elimina las transformaciones en dispositivos móviles */
     }
+
+    
 }
 
 
@@ -211,6 +214,7 @@ transition: transform .2s;
 }
 
 
+
 /*CONTACTO*/
 
 .color-fondo {
@@ -257,7 +261,14 @@ form {
     width: 100%;
 }
 
-
+.efecto {
+    transition: transform 1s ease; 
+    }
+    
+.efecto:hover {
+      background-color: rgb(231, 229, 229);
+    }
+    
 
 /*FOOTER*/
 .texto-footer {
@@ -265,4 +276,6 @@ form {
     font-weight: 100;
 }
 
+.estilo-x { font-size: calc(2em + 3.5vw); }
 
+.estilo-x2 { font-size: calc(1.5em + 1.5vw); }

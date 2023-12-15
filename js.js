@@ -26,3 +26,5 @@ observador.observe(imagen2);
 
 
 
+
+
